@@ -1,0 +1,88 @@
+-------------------Angular Scaffolding Command-------------------
+ng new scp —routing —service-worker -p scp 
+==================================================================================
+------------------Angular Module Creation Command------------------------
+ng g m project --routing
+================================================================================
+------------------Updating Global Packages--------------------------------------
+npm -g outdated --depth=0
+npm -g list --depth=0
+==========================================================================================
+----------------------Heroku Deployment----------------------------------
+Heroku URL
+	- https://git.heroku.com/oktaapi.git
+	- https://git.heroku.com/oktainsight.git
+heroku login
+	- username
+	- password
+heroku apps
+git remote add heroku <git url of heroku> 
+git remote -v
+git checkout dev
+git pull origin dev
+git push heroku dev:master -f
+================================================================================
+---------------------Firebase Deployment-----------------------------
+Firebase Login
+	Username - sennovate@gmail.com 
+	Password - SennoDM2018
+Firebase Auth
+	- ng build --prod
+	- firebase deploy
+====================================================================================
+------------Server side pagination(Node/Mongo)--------------------
+https://codeforgeek.com/2017/12/server-side-pagination-using-node-and-mongo/
+------------Basic login auth in nodejs-----------------------
+http://www.codexpedia.com/node-js/a-very-basic-session-auth-in-node-js-with-express-js/
+==========================================================================
+---------------Basic Auth code in Nodejs-------------
+
+app.use('/login', (req, res) => {
+  if (req.body.userName === "demo@sennovate.com" && req.body.pass === "demo123") {
+    res.status(200).json({ message: 'login success', success: true });
+  } else if (req.body.userName === "test@sennovate.com" && req.body.pass === "test123") {
+    res.status(200).json({ message: 'login success', success: true });
+  } else {
+    res.status(200).json({ message: 'login failed', success: false });
+  }
+});
+
+// "precommit": "ng build --prod && ng lint",
+// const sessionUser = JSON.parse(sessionStorage.getItem('user_info'))
+
+-----------------------Sennoavte Bookmark URL-----------------------------------
+https://embed.plnkr.co/PvmkEhMOORq6LZTr5lJT/
+https://github.com/daniel-nagy/md-data-table
+http://danielnagy.me/md-data-table/
+https://codeforgeek.com/2017/12/server-side-pagination-using-node-and-mongo/
+https://codepen.io/sevilayha/pen/xFcdI
+https://github.com/angular/angular.js/issues/5519
+http://plnkr.co/edit/Tfv2ZA5yfatuoX6bazX9?p=preview
+https://www.youtube.com/watch?v=CKhV7-NF2OI
+https://stackoverflow.com/questions/40525417/dynamic-table-creation-with-ng-repeat-in-angularjs
+https://loiane.com/2017/08/angular-reactive-forms-trigger-validation-on-submit/
+https://idaas.iam.ibm.com/idaas/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser
+https://www.ibm.com/watson/developercloud/assistant/api/v1/node.html?node#introduction
+https://console.bluemix.net/docs/services/conversation/getting-started.html#create-intents
+https://angular.io/guide/quickstart
+https://nodejs.org/dist/latest-v10.x/docs/api/
+https://codepen.io/diegoleme/pen/surIK
+https://medium.com/@ryanchenkie_40935/angular-authentication-using-route-guards-bf7a4ca13ae3
+https://www.youtube.com/watch?v=jnp_ny4SOQE&feature=youtu.be
+https://www.draw.io/
+http://nicesnippets.com/live/bootstrap-chat-box-code-example-demo.html
+https://www.bootply.com/SLezsLancK
+https://www.youtube.com/watch?v=vpQDkEgO-kA
+https://palantir.github.io/tslint/rules/
+http://json2ts.com/
+https://stackoverflow.com/questions/11376094/how-to-call-js-function-within-js-file-into-jsp-file
+https://github.com/swimlane/ngx-charts
+===================================================================================================
+--------------------Udemy links---------------------------------
+https://www.udemy.com/machinelearning/
+https://www.udemy.com/machine-learning-course-with-python/
+https://www.udemy.com/chatbots/
+https://www.udemy.com/the-complete-guide-to-angular-2/
+https://www.udemy.com/complete-angular-indepth-easy/
+https://www.udemy.com/artificial-intelligence-az/
+
