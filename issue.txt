@@ -1,0 +1,72 @@
+
+Nov 20 - IOPP Discussion - 3h
+Nov 21 - IOPP Discussion - 5h
+Nov 22 - IOPP Discussion - 2h
+DEC 05 - Bitbucket Session - 2h
+JAN 28 - Paralle Workflow in CMS - 4h
+JAN 29 - Paralle Workflow in CMS - 4h
+======================================================================================
+------------------XML to MongoDB------------------------------------
+1. XML to XSD Generator
+2. https://codepen.io/KurtWM/pen/JnLak/ - XML adn JSON Convert Method in Javascript
+3. https://www.npmjs.com/package/xml-js
+4. https://www.npmjs.com/package/xml2json
+======================================================================================
+------------------PSVC Login Details---------------------------------
+Super Admin
+    UserName - admipsvcn@integra.co.in
+    Password - Pass@123
+========================================================================================
+------------------IPubSuite Login Details----------------------------
+Author	
+    UserName - alex.richardson@ioppublishing.org
+    Name - Al Rich	
+    Password - Pass@123
+IOPP Publisher	
+    UserName - alex.richardson@iop.org
+    Name - Alex Richardson	
+    Password - Pass@123
+Reviewer	
+    UserName - jade.holt@iop.org
+    Name - Jade Holt	
+    Password - Pass@123
+===========================================================================================
+-------------------ADP Login Details---------------------------
+Company Code:	:	integrasoft
+User Name	:	IS7054
+Password	:	Abcde@123
+==============================================================================================
+------------------Github Generating SSH key in GIT BASH-------------
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+$ eval $(ssh-agent -s)
+$ ssh-add ~/.ssh/id_rsa
+$ clip < ~/.ssh/id_rsa.pub
+Reference - https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+==========================================================================================================
+TBPDY0001082000 - Establishment ID
+TBPDY00010820000016935 -  Member ID
+
+//middleware
+app.use(express.static(__dirname));
+app.set('view engine', 'ejs');
+app.use(fileUpload());
+
+app.get("/", function(req, res) {
+  res.sendFile(__dirname + "/index.html");
+});
+
+app.post("/upload", function(req, res) {
+  // The name of the input field (i.e. "sampleFile") is used to retrieve the uploaded file
+  console.log(req.files, 'FILW');
+   var startup_image = req.files.xmlFile;
+   var fileName = req.files.xmlFile.name;
+  // // Use the mv() method to place the file somewhere on your server
+  startup_image.mv(__dirname + "/uploads/" + fileName, function(err) {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log("uploaded");
+    }
+  });
+});
+
